@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <PackageId>TMegaDecimal</PackageId>
+        <Version>1.0.0</Version>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>TMegaDecimal</RootNamespace>
+
+        <Authors>Mega News</Authors>
+        <Company>Mega News</Company>
+        <Description>
+            Biblioteca de tipos fortemente tipados para valores monetários,
+            preços, quantidades e percentuais.
+        </Description>
+        <PackageTags>money;currency;decimal;finance</PackageTags>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <RepositoryUrl>https://github.com/suaempresa/TMegaMoney</RepositoryUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+</Project>

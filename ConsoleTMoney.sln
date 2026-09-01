@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTMoney", "ConsoleTMoney\ConsoleTMoney.csproj", "{3F02C39D-ACB1-4862-90ED-1A25A58103CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TMegaDecimal", "TMegaDecimal\TMegaDecimal.csproj", "{B58007D1-8B0B-44F6-A765-CA8C34D57BBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMegaDecimal", "TestMegaDecimal\TestMegaDecimal.csproj", "{F12672E5-F127-4507-848E-AAAAAA63F069}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F02C39D-ACB1-4862-90ED-1A25A58103CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F02C39D-ACB1-4862-90ED-1A25A58103CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F02C39D-ACB1-4862-90ED-1A25A58103CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F02C39D-ACB1-4862-90ED-1A25A58103CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B58007D1-8B0B-44F6-A765-CA8C34D57BBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B58007D1-8B0B-44F6-A765-CA8C34D57BBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B58007D1-8B0B-44F6-A765-CA8C34D57BBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B58007D1-8B0B-44F6-A765-CA8C34D57BBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F12672E5-F127-4507-848E-AAAAAA63F069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F12672E5-F127-4507-848E-AAAAAA63F069}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F12672E5-F127-4507-848E-AAAAAA63F069}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F12672E5-F127-4507-848E-AAAAAA63F069}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
