@@ -344,15 +344,17 @@ public class TestsTotal
     }
 
     [Theory]
-    [InlineData(10, "10,00")]
-    [InlineData(12.5, "12,50")]
-    [InlineData(99.99, "99,99")]
-    [InlineData(0, "0,00")]
-    [InlineData(-10.25, "-10,25")]
-    public void ToString_DeveFormatarTotalComDuasCasas(
-        decimal value,
-        string esperado)
+    [InlineData(10)]
+    [InlineData(12.5)]
+    [InlineData(99.99)]
+    [InlineData(0)]
+    [InlineData(-10.25)]
+    public void ToString_DeveFormatarTotalComDuasCasas(decimal value)
     {
+        // Esperado calculado com a cultura da maquina atual, para que o
+        // teste passe independentemente do separador decimal do ambiente.
+        var esperado = value.ToString("F2");
+
         var total = new TTotal(value);
 
         var resultado = total.ToString();

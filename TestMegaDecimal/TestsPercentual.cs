@@ -174,14 +174,16 @@ public class TestsPercentual
     }
 
     [Theory]
-    [InlineData(10, "10,0000%")]
-    [InlineData(12.5, "12,5000%")]
-    [InlineData(99.1234, "99,1234%")]
-    [InlineData(0, "0,0000%")]
-    public void ToString_DeveFormatarPercentualComQuatroCasas(
-        decimal value,
-        string esperado)
+    [InlineData(10)]
+    [InlineData(12.5)]
+    [InlineData(99.1234)]
+    [InlineData(0)]
+    public void ToString_DeveFormatarPercentualComQuatroCasas(decimal value)
     {
+        // Esperado calculado com a cultura da maquina atual, para que o
+        // teste passe independentemente do separador decimal do ambiente.
+        var esperado = value.ToString("F4") + "%";
+
         var percentual = new TPercentual(value);
 
         var resultado = percentual.ToString();

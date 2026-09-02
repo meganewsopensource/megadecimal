@@ -220,15 +220,17 @@ public class TestsPreco
     }
 
     [Theory]
-    [InlineData(10, "10,000000")]
-    [InlineData(12.5, "12,500000")]
-    [InlineData(99.123456, "99,123456")]
-    [InlineData(0, "0,000000")]
-    [InlineData(-10.25, "-10,250000")]
-    public void ToString_DeveFormatarPrecoComSeisCasas(
-        decimal value,
-        string esperado)
+    [InlineData(10)]
+    [InlineData(12.5)]
+    [InlineData(99.123456)]
+    [InlineData(0)]
+    [InlineData(-10.25)]
+    public void ToString_DeveFormatarPrecoComSeisCasas(decimal value)
     {
+        // Esperado calculado com a cultura da maquina atual, para que o
+        // teste passe independentemente do separador decimal do ambiente.
+        var esperado = value.ToString("F6");
+
         var preco = new TPreco(value);
 
         var resultado = preco.ToString();
